@@ -1,14 +1,661 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book|Triple A Graphics</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>this is our project</h1>
+    <style>
+        nav{
+    background-color: #08295a;
+    color: white;
+}
+.price{
+    background-color: rgb(234, 234, 241)
+}
+.accordion-item{
+    background-color: rgb(68, 68, 223);
+}
+.review{
+    background-color: rgb(234, 234, 241)
+}
+.footer{
+    background-color: rgb(234, 234, 241)
+}
+    </style>
+
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg  py-3  px-5">
+    <div class="container-fluid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+        class="bi bi-book-half mb-1 mx-2" viewBox="0 0 16 16">
+        <path
+          d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+      </svg>
+      <h5> Triple A Graphics</h5>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active text-light " aria-current="page" href="#about the book">About the book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#get in touch">Get in touch</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-warning text-light">buy now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--end nav-->
+
+  <!--home-->
+  <!--column one-->
+  <section class="home ">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-3 col-lg-5 text-center text-md-start">
+        <div class="display-2" style="color: #08295a;">
+          Aisha-mohamed
+        </div>
+        <div class="display-4" style="color: #08295a;">
+          Your Coding Skills
+        </div>
+        <div class="text text-secondary my-3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </div>
+        <button  class="btn" style="background-color: #08295a; color: white;"> Buy Now</button>
+        <div class="off-canvas mt-3">
+          <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            Explore my other books
+          </a>
+        </div>
+      </div>
+
+      <!--column two-->
+      <div class="col-md-4 col-lg-4  d-none d-md-block">
+        <img src="./red-hardcover-book-front-cover.jpg" alt="book" width="250px">
+      </div>
+
+    </div>
+  </section>
+  <!--section end-->
+
+  <!--section start-->
+  <section class="price py-5">
+
+    <!--row one-->
+    <div class="row ">
+      <div class="text-center">
+        <h3>
+          Pricing plans
+        </h3>
+        <div class="lead">
+          Choose a pricing plans to suit you
+        </div>
+      </div>
+    </div>
+    <!--row two-->
+    <div class="row  g-0 justify-content-center my-5">
+      <div class="col-md-2 ">
+        <div class="card  text-center mb-3 ">
+          <div class="card-body">
+            <h5 class="card-title">start addition</h5>
+            <p class="card-text display-7">ebook dowload only</p>
+            <h1 class=" fw-bold text-primary my-4" style="font-size: 3rem;"> $12.30</h1>
+            <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti neque pariatur
+            </p>
+            <a href="#" class="btn border border-primary text-primary ">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!--end column 1-->
+      <div class="col-md-3  align-content-center">
+        <div class="card border-primary mb-5" style="margin-top: -25px">
+          <div class="card-header text-center">most popular</div>
+          <div class="card-body text-primary ">
+            <div class="text-center my-4">
+              <h5 class="card-title" style="color: black;">complete eddition</h5>
+              <p class="card-text display-7">ebook dowload only</p>
+              <h1 class=" fw-bold text-primary my-4" style="font-size: 3rem;"> $12.30</h1>
+              <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti neque
+                pariatur </p>
+              <a href="#" class="btn border border-primary text-primary ">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end column2-->
+      <div class="col-md-2  ">
+        <div class="card text-center mb-3 ">
+          <div class="card-body">
+            <h5 class="card-title">start addition</h5>
+            <p class="card-text display-7">ebook dowload only</p>
+            <h1 class=" fw-bold text-primary my-4" style="font-size: 3rem;"> $12.30</h1>
+            <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti neque pariatur
+            </p>
+            <a href="#" class="btn border border-primary text-primary ">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!--end column 3-->
+  </section>
+  <!--end section-->
+
+  <section id="about the book">
+    <div class="container-lg py-5">
+      <div class="text-center">
+        <div class="h2">
+          Inside the book
+        </div>
+        <div class="lead text-muted">
+          a quick galance at the topics you'll learn
+        </div>
+      </div>
+      <div class="row justify-content-around  align-items-center my-5">
+        <div class="col-2  col-lg-4 text-center ">
+          <Img class="img-fluid" src="./e-book.jpg" alt="mobile" style="width: 200px;">
+        </div>
+        <div class="col-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-1 Your first Web page
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                </div>
+              </div>
+            </div>
+            <!--end item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-2 Mastering css
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                </div>
+              </div>
+            </div>
+            <!--end item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-3 the power of javascript
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                </div>
+              </div>
+            </div>
+            <!--end item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-4 Storing data (Firebase database)
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                </div>
+              </div>
+            </div>
+            <!--end item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-5 User Authentication
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                  <P text-secondary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae hic
+                    reprehenderit
+                    exercitationem magnam nulla dolore nisi minima provident perspiciatis debitis.</P>
+                </div>
+              </div>
+            </div>
+            <!--end item-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--end section-->
+
+  <section class="review py-5 " id="review">
+    <div class="text-center  ">
+      <div class="h3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-stars"
+          viewBox="0 1 16 16">
+          <path
+            d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+        </svg>
+        Book reviews
+      </div>
+      <div class="lead text-muted">
+        What students have sayed about the book.......
+      </div>
+    </div>
+    <div class="row  justify-content-center py-3">
+      <div class="col-lg-8">
+        <ul class="list-group ">
+          <li class="list-group-item border-none">
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <div class="h4 my-2">
+              A must buy for every dream web dev
+            </div>
+            <div class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Odio quo commodi facilis quis porro
+              debitis voluptas voluptatem nisi, iure modi Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsa, doloremque.
+            </div>
+            <div class="lead text-primary">
+              reveiw by fatima
+            </div>
+          </li>
+
+        </ul>
+        <!--end list one-->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+              </svg>
+            </div>
+            <div class="h4 my-2">
+              A must buy for every dream web dev
+            </div>
+            <div class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Odio quo commodi facilis quis porro
+              debitis voluptas voluptatem nisi, iure modi Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsa, doloremque.
+            </div>
+            <div class="lead text-primary">
+              reveiw by fahad
+            </div>
+          </li>
+
+        </ul>
+        <!--end list two-->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <div class="h4 my-2">
+            A must buy for every dream web dev
+            </div>
+            <div class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Odio quo commodi facilis quis porro
+              debitis voluptas voluptatem nisi, iure modi Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsa, doloremque.
+            </div>
+            <div class="lead text-primary">
+            reveiw by Gaabshiine
+            </div>
+         </li>
+
+        </ul>
+        <!--end list 3-->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="star">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+              </svg>
+            </div>
+            <div class="h4 my-2">
+            A must buy for every dream web dev
+            </div>
+            <div class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Odio quo commodi facilis quis porro
+              debitis voluptas voluptatem nisi, iure modi Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsa, doloremque.
+            </div>
+            <div class="lead text-primary">
+            reveiw by mohamed
+            </div>
+         </li>
+
+        </ul>
+        <!--end list4-->
+      </div>
+    </div>
+  </section>
+  <!--end section-->
+
+  <section >
+    <div class="container-lg py-5 " id="get in touch">
+      <div class="text-center ">
+        <div class="h3">
+          Get in touch
+        </div>
+        <div class="lead text-muted">
+          Questions to ask ? Fill in the form to contact me directly.....
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <label for="email">email address:</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+              </svg>
+            </span>
+            <input type="text" class="form-control" placeholder="enter your email"
+              aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                  d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+              </svg>
+            </span>
+          </div>
+          <label for="name">Name:</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+              </svg>
+            </span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                  d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+              </svg>
+            </span>
+          </div>
+          <!---end list-->
+          <label class="label my-2" for="question">What is the question about ?</label>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                <path
+                  d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+              </svg>
+            </label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>choose price</option>
+              <option value="Price-query">Price-query</option>
+              <option value="Contact-query">Contact-query</option>
+              <option value="other-query">other-query</option>
+            </select>
+          </div>
+          <!--end list-->
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 140px"></textarea>
+            <label for="floatingTextarea2">Your query</label>
+          </div>
+          <div class="text-center my-3">
+            <button class="btn btn-primary align-items-center" style="background-color: #08295a;">submit</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end section-->
+  <section class="footer my-3 py-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <div class="h2">
+          Stay in the loop
+        </div>
+        <div class="lead ">
+          Get the latest updates as they happen...
+        </div>
+
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6 my-3">
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, culpa corporis unde
+            reiciendis
+            nesciunt deleniti sequi, praesentium eaque exercitationem, voluptas similique commodi iste
+            repellendus? Consequuntur fugit facere beatae libero labore?Lorem ipsum dolor sit amet
+            consectetur
+            adipisicing elit. Hic temporibus et perferendis maiores enim, eaque praesentium illo atque
+            pariatur
+            doloremque!
+          </P>
+          <!-- Button trigger modal -->
+          <button class="btn  btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal"
+            style="padding: 2px -2px;">
+            Register for updates
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="copy-right text-center">
+    <p>&copy 2024 created by Aisha mohamed </p>
+  </div>
+
+
+  <!---modal-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!--off canvas-->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--javascript link-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
+
 </html>
+ 
